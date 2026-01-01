@@ -1,0 +1,1 @@
+QR Byte is a lightweight, fully client-side QR code generator built with vanilla HTML, CSS, and JavaScript. It allows users to create custom QR codes instantly with options like color customization and logo embedding, all without logins, subscriptions, or a backend. The project focuses on simplicity, speed, and privacy, running entirely in the browser.
