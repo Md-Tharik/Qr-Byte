@@ -1,75 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About QRByte</title>
-  <meta name="description" content="About QRByte – a free QR code generator with no login and custom logo support.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – QR BYTE</title>
+    <style>
+        :root {
+            --bg: #050505;
+            --card: #111111;
+            --border: rgba(255,255,255,0.1);
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      background: #0f0f0f;
-      color: #eaeaea;
-      line-height: 1.7;
-    }
-    .container {
-      max-width: 820px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    p {
-      color: #d6d6d6;
-      font-size: 1rem;
-    }
-    footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #2a2a2a;
-      text-align: center;
-      font-size: 14px;
-      color: #9a9a9a;
-    }
-    a {
-      color: #4da3ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Matching your generator width to stop stretching */
+            background: var(--card);
+            padding: 30px;
+            border-radius: 28px;
+            border: 1px solid var(--border);
+            margin-top: 20px;
+        }
+
+        h1 { font-size: 20px; font-weight: 800; letter-spacing: 1px; margin-bottom: 20px; text-transform: uppercase; }
+        p { font-size: 14px; color: #aaa; line-height: 1.6; margin-bottom: 15px; }
+        strong { color: #fff; }
+
+        .footer { text-align: center; margin-top: 30px; font-size: 9px; color: #444; letter-spacing: 0.5px; text-transform: uppercase; border-top: 1px solid var(--border); padding-top: 20px; }
+        
+        .qrbyte-links { margin-top: 15px; text-align: center; font-size: 13px; }
+        .qrbyte-links a { color: #bcbcbc; text-decoration: none; transition: 0.2s; }
+        .qrbyte-links a:hover { color: #fff; }
+        .qrbyte-links span { margin: 0 6px; color: #444; }
+
+        .back-link { display: block; margin-bottom: 20px; font-size: 12px; color: #666; text-decoration: none; font-weight: 700; }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <a href="/" class="back-link">← BACK TO TOOL</a>
+        <h1>About QR BYTE</h1>
+        <p><strong>QR BYTE</strong> is a free online QR code generator built for speed, simplicity, and privacy.</p>
+        <p>Generate QR codes instantly with no login, no subscription, and no tracking. We support custom logos for branded QR codes without charging a cent.</p>
+        <p>No accounts. No data storage. Just generate and download.</p>
 
-  <div class="container">
-    <h1>About QRByte</h1>
-
-    <p>
-      <strong>QRByte</strong> is a free online QR code generator built for speed,
-      simplicity, and privacy.
-    </p>
-
-    <p>
-      Generate QR codes instantly with no login, no subscription, and no tracking.
-      QRByte supports custom logos for branded QR codes.
-    </p>
-
-    <p>
-      No accounts. No data storage. No unnecessary features.
-      Just generate and download.
-    </p>
-
-    <footer>
-      <a href="/">Home</a> ·
-      <a href="/pages/privacy.html">Privacy Policy</a> ·
-      <a href="/pages/blog.html">Blog</a>
-    </footer>
-  </div>
-
+        <div class="footer">© QR BYTE — QR tools that just work</div>
+        <div class="qrbyte-links">
+            <a href="/">Home</a>
+            <span>·</span>
+            <a href="/Pages/privacy.html">Privacy</a>
+            <span>·</span>
+            <a href="/Pages/blog.html">Blog</a>
+        </div>
+    </div>
 </body>
 </html>
