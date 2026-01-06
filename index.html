@@ -139,7 +139,41 @@
         .btn:active { transform: scale(0.96); }
 
         .footer { text-align: center; margin-top: 15px; font-size: 9px; color: #444; letter-spacing: 0.5px; }
+
+        .qrbyte-footer-links {
+  position: fixed;
+  bottom: 14px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.qrbyte-footer-links a {
+  color: #b5b5b5;
+  text-decoration: none;
+}
+
+.qrbyte-footer-links a:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.qrbyte-footer-links span {
+  margin: 0 6px;
+  color: #777;
+}
+
+/* Mobile spacing fix */
+@media (max-height: 700px) {
+  .qrbyte-footer-links {
+    position: relative;
+    margin-top: 24px;
+  }
+}
+        
     </style>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3099096453042129"
      crossorigin="anonymous"></script>
 </head>
