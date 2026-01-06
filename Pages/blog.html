@@ -1,73 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>QRByte Blog</title>
-  <meta name="description" content="QRByte blog with QR code guides, tips, and updates.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRByte Blog – Guides & Updates</title>
+    <meta name="description" content="QRByte blog with QR code guides, tips, and updates.">
+    <style>
+        :root {
+            --bg: #050505;
+            --card: #111111;
+            --border: rgba(255,255,255,0.1);
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      background: #0f0f0f;
-      color: #eaeaea;
-      line-height: 1.7;
-    }
-    .container {
-      max-width: 820px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-    h1 {
-      font-size: 2rem;
-    }
-    p, li {
-      color: #d6d6d6;
-      font-size: 1rem;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #2a2a2a;
-      text-align: center;
-      font-size: 14px;
-      color: #9a9a9a;
-    }
-    a {
-      color: #4da3ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+        * { 
+            box-sizing: border-box; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: var(--card);
+            padding: 24px;
+            border-radius: 28px;
+            border: 1px solid var(--border);
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            color: #888;
+            text-decoration: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        h1 { 
+            font-size: 18px; 
+            font-weight: 800; 
+            letter-spacing: 1px; 
+            margin: 0 0 12px 0; 
+        }
+
+        p { 
+            font-size: 14px; 
+            color: #888; 
+            line-height: 1.6; 
+            margin-bottom: 25px; 
+        }
+
+        .post-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+
+        .post-item {
+            background: #000;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            margin-bottom: 12px;
+            transition: 0.2s;
+        }
+
+        .post-item:hover {
+            border-color: rgba(255,255,255,0.3);
+        }
+
+        .post-item a {
+            display: block;
+            padding: 16px;
+            color: #eee;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* Standard Footer from Index */
+        .footer-section {
+            margin-top: 25px;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        .footer { 
+            font-size: 9px; 
+            color: #444; 
+            letter-spacing: 0.5px; 
+            text-transform: uppercase;
+        }
+
+        .qrbyte-links {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 13px;
+            opacity: 0.65;
+        }
+
+        .qrbyte-links a {
+            color: #bcbcbc;
+            text-decoration: none;
+        }
+
+        .qrbyte-links span {
+            margin: 0 6px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="container">
+<div class="container">
+    <a href="/" class="back-btn">← Back to Home</a>
+    
     <h1>QRByte Blog</h1>
+    <p>Practical guides, tips, and updates for digital creators and businesses.</p>
 
-    <p>
-      The QRByte blog shares practical guides, tips, and updates related to QR
-      codes and digital tools.
-    </p>
+    <ul class="post-list">
+        <li class="post-item">
+            <a href="/Pages/how-to-generate-custom-qr-with-logo.html">
+                How to generate a custom QR code with logo for free
+            </a>
+        </li>
+        </ul>
 
-    <li>
-  <a href="/Pages/how-to-generate-custom-qr-with-logo.html">
-    How to generate a custom QR code with logo for free
-  </a>
-    </li>
-
-    <footer>
-      <a href="/">Home</a> ·
-      <a href="/Pages/about.html">About</a> ·
-      <a href="/Pages/privacy.html">Privacy Policy</a>
-    </footer>
-  </div>
+    <div class="footer-section">
+        <div class="qrbyte-links">
+            <a href="/Pages/about.html">About</a>
+            <span>·</span>
+            <a href="/Pages/privacy.html">Privacy Policy</a>
+            <span>·</span>
+            <a href="/Pages/blog.html">Blog</a>
+        </div>
+        <div class="footer">
+            © QR BYTE — QR tools that just work
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
+
