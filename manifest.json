@@ -1,0 +1,9 @@
+{
+  "name": "Qr-Byte",
+  "short_name": "Qr-Byte",
+  "description": "A web app for generating and reading QR codes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a"
+}
